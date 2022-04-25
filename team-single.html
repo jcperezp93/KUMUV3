@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>Tutor - Online Tutorials And Courses HTML template</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<a href="./" class="logo">
+			<img src="images/logo.png" alt="">
+			<span class="logo-text color-darkgrey">utor</span>
+		</a>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form" action="/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="btn">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls p-normal">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+		</div>
+	</div><!-- eof .modal -->
+
+	<div class="modal fade login-form text-center" id="form1" tabindex="-1" role="dialog" aria-labelledby="formlogin" aria-hidden="true">
+		<div class="modal-dialog ls">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<div class="modal-header">
+					<h6 class="modal-title" id="formlogin">Log In</h6>
+					<button type="button" class="btn btn-maincolor btn-sign">Sign Up</button>
+
+				</div>
+				<div class="modal-body">
+					<div class="form-title">
+						<h2>Log In</h2>
+						<p>Log in to save your progress and obtain a certificate in Alison’s free Diploma in Web</p>
+					</div>
+					<form action="/">
+						<div class="form-group has-placeholder">
+							<label for="email-logn">Email:</label>
+							<input type="email" class="form-control" id="email-logn" placeholder="Your email adress" name="email-logn">
+						</div>
+						<div class="form-group has-placeholder">
+							<label for="password-login">Password:</label>
+							<input type="password" class="form-control" id="password-login" placeholder="Password" name="password">
+						</div>
+						<div class="social-account">
+							<h6>
+								or
+							</h6>
+							<h6>
+								Sign up with your Social Account
+							</h6>
+							<span class="social-icons">
+								<a href="#" class="fa fa-facebook " title="facebook"></a>
+								<a href="#" class="fa fa-twitter " title="twitter"></a>
+								<a href="#" class="fa fa-paper-plane " title="telegram"></a>
+								<a href="#" class="fa fa-linkedin " title="linkedin"></a>
+								<a href="#" class="fa fa-instagram " title="instagram"></a>
+								<a href="#" class="fa fa-youtube-play " title="youtube"></a>
+							</span>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="remember">
+							<label class="form-check-label" for="remember">
+								Keep me logged in
+							</label>
+						</div>
+						<button type="submit" class="btn btn-maincolor log-btn">Log in</button>
+					</form>
+					<div class="modal-footer">
+						Dont have an Tutor account?<button type="button" class="btn-sign">Sign Up</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade sigin-form text-center" id="form2" tabindex="-1" role="dialog" aria-labelledby="formsign" aria-hidden="true">
+		<div class="modal-dialog ls">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<div class="modal-header">
+					<button type="button" class="btn btn-maincolor btn-login">Log in</button>
+					<h6 class="modal-title" id="formsign">Sign Up</h6>
+				</div>
+				<div class="modal-body">
+					<div class="form-title">
+						<h2>Sign up</h2>
+						<p>Sign up to save your progress and obtain a certificate in Alison’s free Diploma in Web</p>
+					</div>
+					<form action="/">
+						<div class="form-group has-placeholder">
+							<label for="name-sigin">Your Name:</label>
+							<input type="text" class="form-control" id="name-sigin" placeholder="Enter your name" name="First name">
+						</div>
+						<div class="form-group has-placeholder">
+							<label for="sigemail">Email:</label>
+							<input type="email" class="form-control" id="sigemail" placeholder="Your email adress" name="sigemail">
+						</div>
+						<div class="form-group has-placeholder">
+							<label for="sigpassword">Password:</label>
+							<input type="password" class="form-control" id="sigpassword" placeholder="password" name="sigpassword">
+						</div>
+						<div class="social-account">
+							<h6>
+								or
+							</h6>
+							<h6>
+								Sign up with your Social Account
+							</h6>
+							<span class="social-icons">
+								<a href="#" class="fa fa-facebook " title="facebook"></a>
+								<a href="#" class="fa fa-twitter " title="twitter"></a>
+								<a href="#" class="fa fa-paper-plane " title="telegram"></a>
+								<a href="#" class="fa fa-linkedin " title="linkedin"></a>
+								<a href="#" class="fa fa-instagram " title="instagram"></a>
+								<a href="#" class="fa fa-youtube-play " title="youtube"></a>
+							</span>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="agree">
+							<label class="form-check-label agree" for="agree">
+								I agree to the Terms and Conditions
+							</label>
+							<input class="form-check-input" type="checkbox" id="updates">
+							<label class="form-check-label" for="updates">
+								Yes, I want to get the most out of Tutor by receiving tips, updates and exclusive offers.
+							</label>
+						</div>
+						<button type="submit" class="btn btn-maincolor btn-sign">Sign In</button>
+					</form>
+					<div class="modal-footer">
+						Already have an Alison account?<button type="button" class="btn-login">Log In</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+			<div class="header_absolute ds s-parallax s-overlay title-bg3">
+				<!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
+				<header class="page_header ds justify-nav-center s-borderbottom container-px-20">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-xl-2 col-lg-4 col-md-5 col-11">
+								<a href="./" class="logo">
+									<img src="images/logo.png" alt="">
+									<span class="logo-text color-darkgrey">utor</span>
+								</a>
+							</div>
+							<div class="col-xl-6 col-lg-8 col-md-7 col-1">
+								<div class="nav-wrap">
+									<!-- main nav start -->
+									<nav class="top-nav">
+										<ul class="nav sf-menu">
+
+											<li class="active">
+												<a href="index.html">Home</a>
+												<ul>
+													<li>
+														<a href="index.html">Home Page</a>
+													</li>
+													<li>
+														<a href="index_singlepage.html">Single Page</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="about.html">Pages</a>
+												<ul>
+													<li>
+														<a href="course-categories.html">Course Categories</a>
+													</li>
+													<li>
+														<a href="course-catalog.html">Course Catalog</a>
+														<ul>
+															<li>
+																<a href="single-course.html">Single Course</a>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a href="about.html">About</a>
+													</li>
+
+													<li>
+														<a href="pricing.html">Pricing</a>
+													</li>
+													<!-- gallery -->
+													<li>
+														<a href="gallery-image.html">Gallery</a>
+														<ul>
+															<!-- Gallery image only -->
+															<li>
+																<a href="gallery-image.html">Image Only</a>
+																<ul>
+																	<li>
+																		<a href="gallery-image-2-cols.html">2 columns</a>
+																	</li>
+																	<li>
+																		<a href="gallery-image.html">3 columns</a>
+																	</li>
+																	<li>
+																		<a href="gallery-image-4-cols-fullwidth.html">4 columns fullwidth</a>
+																	</li>
+
+																</ul>
+															</li>
+															<!-- eof Gallery image only -->
+
+															<!-- Gallery with title -->
+															<li>
+																<a href="gallery-title.html">Image With Title</a>
+																<ul>
+																	<li>
+																		<a href="gallery-title-2-cols.html">2 columns</a>
+																	</li>
+																	<li>
+																		<a href="gallery-title.html">3 column</a>
+																	</li>
+																	<li>
+																		<a href="gallery-title-4-cols-fullwidth.html">4 columns fullwidth</a>
+																	</li>
+																</ul>
+															</li>
+															<!-- eof Gallery with title -->
+
+															<!-- Gallery with excerpt -->
+															<li>
+																<a href="gallery-excerpt.html">Image with Excerpt</a>
+																<ul>
+																	<li>
+																		<a href="gallery-excerpt-2-cols.html">2 columns</a>
+																	</li>
+																	<li>
+																		<a href="gallery-excerpt.html">3 column</a>
+																	</li>
+																	<li>
+																		<a href="gallery-excerpt-4-cols-fullwidth.html">4 columns fullwdith</a>
+																	</li>
+																</ul>
+															</li>
+															<!-- eof Gallery with excerpt -->
+
+															<li>
+																<a href="gallery-tiled.html">Tiled Gallery</a>
+															</li>
+
+															<li>
+																<a href="direction-gallery.html">Direction Gallery</a>
+															</li>
+
+															<!-- Gallery item -->
+															<li>
+																<a href="gallery-single.html">Gallery Item</a>
+															</li>
+															<!-- eof Gallery item -->
+														</ul>
+													</li>
+													<!-- eof Gallery -->
+
+													<!-- contacts -->
+													<li>
+														<a href="contact.html">Contact</a>
+														<ul>
+															<li>
+																<a href="contact.html">Contact 1</a>
+															</li>
+															<li>
+																<a href="contact2.html">Contact 2</a>
+															</li>
+															<li>
+																<a href="contact3.html">Contact 3</a>
+															</li>
+															<li>
+																<a href="contact4.html">Contact 4</a>
+															</li>
+														</ul>
+													</li>
+													<!-- eof contacts -->
+													<!-- shop -->
+													<li>
+														<a href="shop-right.html">Shop</a>
+														<ul>
+															<li>
+																<a href="shop-account-dashboard.html">Account</a>
+																<ul>
+
+																	<li>
+																		<a href="shop-account-details.html">Account details</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-addresses.html">Addresses</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-address-edit.html">Edit Address</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-orders.html">Orders</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-order-single.html">Single Order</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-downloads.html">Downloads</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-password-reset.html">Password Reset</a>
+																	</li>
+																	<li>
+																		<a href="shop-account-login.html">Login/Logout</a>
+																	</li>
+
+																</ul>
+															</li>
+															<li>
+																<a href="shop-right.html">Right Sidebar</a>
+															</li>
+															<li>
+																<a href="shop-left.html">Left Sidebar</a>
+															</li>
+															<li>
+																<a href="shop-product-right.html">Product Right Sidebar</a>
+															</li>
+															<li>
+																<a href="shop-product-left.html">Product Left Sidebar</a>
+															</li>
+															<li>
+																<a href="shop-cart.html">Cart</a>
+															</li>
+															<li>
+																<a href="shop-checkout.html">Checkout</a>
+															</li>
+															<li>
+																<a href="shop-order-received.html">Order Received</a>
+															</li>
+
+														</ul>
+													</li>
+													<!-- eof shop -->
+
+													<!-- features -->
+													<li>
+														<a href="shortcodes_iconbox.html">Shortcodes</a>
+														<ul>
+															<li>
+																<a href="shortcodes_typography.html">Typography</a>
+															</li>
+															<li>
+																<a href="shortcodes_buttons.html">Buttons</a>
+															</li>
+															<li>
+																<a href="shortcodes_iconbox.html">Icon Boxes</a>
+															</li>
+															<li>
+																<a href="shortcodes_progress.html">Progress</a>
+															</li>
+															<li>
+																<a href="shortcodes_tabs.html">Tabs &amp; Collapse</a>
+															</li>
+															<li>
+																<a href="shortcodes_bootstrap.html">Bootstrap Elements</a>
+															</li>
+															<li>
+																<a href="shortcodes_animation.html">Animation</a>
+															</li>
+															<li>
+																<a href="shortcodes_icons.html">Template Icons</a>
+															</li>
+															<li>
+																<a href="shortcodes_socialicons.html">Social Icons</a>
+															</li>
+														</ul>
+													</li>
+													<!-- eof shortcodes -->
+
+													<li>
+														<a href="shortcodes_widgets_default.html">Widgets</a>
+														<ul>
+															<li>
+																<a href="shortcodes_widgets_default.html">Default Widgets</a>
+															</li>
+															<li>
+																<a href="shortcodes_widgets_shop.html">Shop Widgets</a>
+															</li>
+															<li>
+																<a href="shortcodes_widgets_custom.html">Custom Widgets</a>
+															</li>
+														</ul>
+
+													</li>
+
+
+													<!-- events -->
+													<li>
+														<a href="events-left.html">Events</a>
+														<ul>
+															<li>
+																<a href="events-left.html">Left Sidebar</a>
+															</li>
+															<li>
+																<a href="events-right.html">Right Sidebar</a>
+															</li>
+															<li>
+																<a href="events-full.html">Full Width</a>
+															</li>
+															<li>
+																<a href="event-single-left.html">Single Event</a>
+																<ul>
+																	<li>
+																		<a href="event-single-left.html">Left Sidebar</a>
+																	</li>
+																	<li>
+																		<a href="event-single-right.html">Right Sidebar</a>
+																	</li>
+																	<li>
+																		<a href="event-single-full.html">Full Width</a>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+													<!-- eof events -->
+
+													<li>
+														<a href="team.html">Team</a>
+														<ul>
+															<li>
+																<a href="team.html">Team List</a>
+															</li>
+															<li>
+																<a href="team-single.html">Team Member</a>
+															</li>
+														</ul>
+													</li>
+
+
+													<li>
+														<a href="comingsoon.html">Comingsoon</a>
+													</li>
+
+													<li>
+														<a href="faq.html">FAQ</a>
+														<ul>
+															<li>
+																<a href="faq.html">FAQ</a>
+															</li>
+															<li>
+																<a href="faq2.html">FAQ 2</a>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a href="404.html">404</a>
+													</li>
+
+												</ul>
+											</li>
+											<!-- eof pages -->
+
+											<!-- blog -->
+											<li>
+												<a href="blog-right.html">News</a>
+												<ul>
+
+													<li>
+														<a href="blog-right.html">Right Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-left.html">Left Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-full.html">No Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-grid.html">News Grid</a>
+													</li>
+
+													<li>
+														<a href="blog-single-right.html">Post</a>
+														<ul>
+															<li>
+																<a href="blog-single-right.html">Right Sidebar</a>
+															</li>
+															<li>
+																<a href="blog-single-left.html">Left Sidebar</a>
+															</li>
+															<li>
+																<a href="blog-single-full.html">No Sidebar</a>
+															</li>
+														</ul>
+													</li>
+
+													<li>
+														<a href="blog-single-video-right.html">Video Post</a>
+														<ul>
+															<li>
+																<a href="blog-single-video-right.html">Right Sidebar</a>
+															</li>
+															<li>
+																<a href="blog-single-video-left.html">Left Sidebar</a>
+															</li>
+															<li>
+																<a href="blog-single-video-full.html">No Sidebar</a>
+															</li>
+														</ul>
+													</li>
+
+												</ul>
+											</li>
+											<!-- eof blog -->
+
+											<li>
+												<a href="#">Features</a>
+												<div class="mega-menu">
+													<ul class="mega-menu-row">
+														<li class="mega-menu-col">
+															<a href="#">Headers</a>
+															<ul>
+																<li>
+																	<a href="header1.html">Header Type 1</a>
+																</li>
+																<li>
+																	<a href="header2.html">Header Type 2</a>
+																</li>
+																<li>
+																	<a href="header3.html">Header Type 3</a>
+																</li>
+																<li>
+																	<a href="header4.html">Header Type 4</a>
+																</li>
+																<li>
+																	<a href="header5.html">Header Type 5</a>
+																</li>
+																<li>
+																	<a href="header6.html">Header Type 6</a>
+																</li>
+															</ul>
+														</li>
+														<li class="mega-menu-col">
+															<a href="#">Side Menus</a>
+															<ul>
+																<li>
+																	<a href="header-side.html">Push Left</a>
+																</li>
+																<li>
+																	<a href="header-side-right.html">Push Right</a>
+																</li>
+																<li>
+																	<a href="header-side-slide.html">Slide Left</a>
+																</li>
+																<li>
+																	<a href="header-side-slide-right.html">Slide Right</a>
+																</li>
+																<li>
+																	<a href="header-side-sticked.html">Sticked Left</a>
+																</li>
+																<li>
+																	<a href="header-side-sticked-right.html">Sticked Right</a>
+																</li>
+															</ul>
+														</li>
+														<li class="mega-menu-col">
+															<a href="title1.html">Title Sections</a>
+															<ul>
+																<li>
+																	<a href="title1.html">Title section 1</a>
+																</li>
+																<li>
+																	<a href="title2.html">Title section 2</a>
+																</li>
+																<li>
+																	<a href="title3.html">Title section 3</a>
+																</li>
+																<li>
+																	<a href="title4.html">Title section 4</a>
+																</li>
+																<li>
+																	<a href="title5.html">Title section 5</a>
+																</li>
+																<li>
+																	<a href="title6.html">Title section 6</a>
+																</li>
+															</ul>
+														</li>
+														<li class="mega-menu-col">
+															<a href="footer1.html#footer">Footers</a>
+															<ul>
+																<li>
+																	<a href="footer1.html#footer">Footer Type 1</a>
+																</li>
+																<li>
+																	<a href="footer2.html#footer">Footer Type 2</a>
+																</li>
+																<li>
+																	<a href="footer3.html#footer">Footer Type 3</a>
+																</li>
+																<li>
+																	<a href="footer4.html#footer">Footer Type 4</a>
+																</li>
+																<li>
+																	<a href="footer5.html#footer">Footer Type 5</a>
+																</li>
+																<li>
+																	<a href="footer6.html#footer">Footer Type 6</a>
+																</li>
+															</ul>
+														</li>
+														<li class="mega-menu-col">
+															<a href="copyright1.html#copyright">Copyright</a>
+
+															<ul>
+																<li>
+																	<a href="copyright1.html#copyright">Copyright 1</a>
+																</li>
+																<li>
+																	<a href="copyright2.html#copyright">Copyright 2</a>
+																</li>
+																<li>
+																	<a href="copyright3.html#copyright">Copyright 3</a>
+																</li>
+																<li>
+																	<a href="copyright4.html#copyright">Copyright 4</a>
+																</li>
+																<li>
+																	<a href="copyright5.html#copyright">Copyright 5</a>
+																</li>
+																<li>
+																	<a href="copyright6.html#copyright">Copyright 6</a>
+																</li>
+															</ul>
+														</li>
+
+													</ul>
+												</div> <!-- eof mega menu -->
+											</li>
+											<!-- eof features -->
+
+
+										</ul>
+
+
+									</nav>
+									<!-- eof main nav -->
+									<!--hidding includes on small devices. They are duplicated in topline-->
+								</div>
+							</div>
+							<div class="col-4 d-none d-xl-block">
+								<div class="top-includes main-includes">
+									<button type="button" class="sign-btn-form" data-toggle="modal" data-target="#form2"><i class="fw-900 s-16 fa fa-sign-in" aria-hidden="true"></i>Sign Up</button>
+									<button type="button" class="login-btn-form login_modal_window" data-toggle="modal" data-target="#form1"><i class="fs-16 fa fa-user" aria-hidden="true"></i>Login</button>
+									<div class="widget course-dropdown">
+										<a class="dropdown-toggle" id="course-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Categories
+										</a>
+										<div class="dropdown-menu dropdown-multicol dropdown-menu-right ds" aria-labelledby="course-dropdown">
+											<div class="row c-gutter-75">
+												<div class="col-4">
+													<a class="dropdown-item" href="course-categories.html">
+														<i class="fs-31 icon-m-technology" aria-hidden="true"></i>
+														Technology
+													</a>
+													<a class="dropdown-item" href="course-categories.html">
+														<i class="fs-31 icon-m-language" aria-hidden="true"></i>
+														Language
+													</a>
+													<a class="dropdown-item" href="course-categories.html">
+														<i class="fs-31 icon-m-science" aria-hidden="true"></i>
+														Science
+													</a>
+												</div>
+												<div class="col-4">
+													<a class="dropdown-item" href="course-categories.html">
+														<i class="fs-31 icon-m-health" aria-hidden="true"></i>
+														Health
+													</a>
+													<a class="dropdown-item" href="course-categories.html">
+														<i class="fs-31 icon-m-humanities" aria-hidden="true"></i>
+														Humanities
+													</a>
+													<a class="dropdown-item" href="course-categories.html">
+														<i class="fs-31 icon-m-business" aria-hidden="true"></i>
+														Business
+													</a>
+												</div>
+												<div class="col-4">
+													<a class="dropdown-item" href="course-categories.html">
+														<i class="fs-31 icon-m-math" aria-hidden="true"></i>
+														Math
+													</a>
+													<a class="dropdown-item" href="course-categories.html">
+														<i class="fs-31 icon-m-marketing" aria-hidden="true"></i>
+														Marketing
+													</a>
+													<a class="dropdown-item" href="course-categories.html">
+														<i class="fs-31 icon-m-lifestyle" aria-hidden="true"></i>
+														Lifestyle
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- header toggler -->
+					<span class="toggle_menu"><span></span></span>
+				</header>
+
+				<section class="page_title ds s-pt-80 s-pb-80 s-pt-lg-130 s-pb-lg-90">
+					<div class="divider-50"></div>
+					<div class="container">
+						<div class="row">
+
+							<div class="col-md-12">
+								<h1>Colleague</h1>
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item">
+										<a href="./">Home</a>
+									</li>
+									<li class="breadcrumb-item">
+										<a href="#">Pages</a>
+									</li>
+									<li class="breadcrumb-item active">
+										Colleague
+									</li>
+								</ol>
+							</div>
+
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<section class="ls s-pt-60 s-pb-55 s-pt-lg-100 s-pb-lg-95 team-single">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="row  justify-content-between c-gutter-30">
+
+								<div class="col-md-6 order-2 order-md-1 text-center text-md-left">
+									<div>
+										<div class="divider-20 d-block d-md-none"></div>
+										<h2>Eneida F. Withrow</h2>
+										<p class="color-dark position">Autor courses</p>
+										<p>
+											At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+										</p>
+										<p>
+											Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+										</p>
+										<p>
+											At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+										</p>
+										<div class="tagcloud">
+											<a href="#" class="tag-cloud-link">
+												Technology
+											</a>
+											<a href="#" class="tag-cloud-link">
+												Humanities
+											</a>
+											<a href="#" class="tag-cloud-link">
+												Language
+											</a>
+										</div>
+										<p class="social-icons">
+											<a href="#" class="fa fa-facebook fs-20" title="facebook"></a>
+											<a href="#" class="fa fa-paper-plane" title="telegram"></a>
+											<a href="#" class="fa fa-linkedin" title="linkedin"></a>
+											<a href="#" class="fa fa-instagram" title="instagram"></a>
+											<a href="#" class="fa fa-youtube-play" title="youtube"></a>
+										</p>
+									</div>
+
+								</div>
+								<div class="col-md-5 order-1 order-md-2">
+									<img class="rounded" src="images/team/10.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="section_testimonials" class="s-pt-60 s-pb-55 s-pt-lg-100 s-pb-lg-95 ls ms">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="testimonials-slider owl-carousel" data-autoplay="true" data-loop="true" data-responsive-lg="1" data-responsive-md="1" data-responsive-sm="1" data-nav="false" data-dots="false">
+								<div class="quote-item">
+									<div class="quote-image">
+										<img src="images/team/testimonials_01.jpg" alt="">
+									</div>
+									<p>
+										<em class="big">
+											I met so many interesting people over the last couple of months, who proved to stay ahead of the modern technologies in the world of branding and web design. I loved working with you all, thank you so much!
+										</em>
+									</p>
+									<img src="images/quote.png" alt="">
+									<h6 class="quote-meta fw-700">
+										Keith M. Jordan
+									</h6>
+									<p>Applied Researcher</p>
+								</div>
+								<div class="quote-item">
+									<div class="quote-image">
+										<img src="images/team/testimonials_02.jpg" alt="">
+									</div>
+									<p>
+										<em class="big">
+											I am inspired by the UN Declaration that “everyone is entitled to a free education”. We are committed to equality and access to education irrespective of gender, geography, economic status or any other barriers to access.
+										</em>
+									</p>
+									<img src="images/quote.png" alt="">
+									<h6 class="quote-meta fw-700">
+										Ron M. Martin
+									</h6>
+									<p>Applied Researcher</p>
+								</div>
+								<div class="quote-item">
+									<div class="quote-image">
+										<img src="images/team/testimonials_03.jpg" alt="">
+									</div>
+									<p>
+										<em class="big">
+											I am drive by our belief in the power of free education and skills training to change people’s lives for the better and are passionate about providing an overall learning experience that meets their needs and helps them to achieve life goals.
+										</em>
+									</p>
+									<img src="images/quote.png" alt="">
+									<h6 class="quote-meta fw-700">
+										Thelma R. Furman
+									</h6>
+									<p>Autor courses</p>
+								</div>
+
+							</div><!-- .testimonials-slider -->
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls s-pt-60 s-pb-55 s-pt-lg-90 s-pb-lg-95">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 text-center">
+							<h2 class="mb-20">Colleagues</h2>
+							<div class="divider-43 d-none d-md-block"></div>
+						</div>
+						<div class="col-md-12">
+							<div class="owl-carousel" data-autoplay="true" data-loop="true" data-responsive-lg="3" data-responsive-md="2" data-responsive-sm="2" data-nav="false" data-dots="false">
+
+								<div class="vertical-item text-center">
+									<div class="item-media rounded">
+										<img src="images/team/1.jpg" alt="">
+										<div class="media-links">
+											<a class="abs-link" title="" href="team-single.html"></a>
+										</div>
+									</div>
+									<div class="item-content">
+										<h6 class="title-content">
+											<a href="team-single.html">Jessica T. Stratton</a>
+										</h6>
+										<p class="position">
+											Autor courses
+										</p>
+										<p class="social-icons">
+											<a href="#" class="fa fa-facebook" title="facebook"></a>
+											<a href="#" class="fa fa-instagram" title="instagram"></a>
+											<a href="#" class="fa fa-youtube-play" title="youtube"></a>
+										</p>
+									</div>
+								</div>
+								<div class="vertical-item text-center">
+									<div class="item-media rounded">
+										<img src="images/team/2.jpg" alt="">
+										<div class="media-links">
+											<a class="abs-link" title="" href="team-single.html"></a>
+										</div>
+									</div>
+									<div class="item-content">
+										<h6 class="title-content">
+											<a href="team-single.html">Donald J. White</a>
+										</h6>
+										<p class="position">
+											Autor courses
+										</p>
+										<p class="social-icons">
+											<a href="#" class="fa fa-facebook" title="facebook"></a>
+											<a href="#" class="fa fa-paper-plane" title="telegram"></a>
+											<a href="#" class="fa fa-linkedin" title="linkedin"></a>
+											<a href="#" class="fa fa-instagram" title="instagram"></a>
+											<a href="#" class="fa fa-youtube-play" title="youtube"></a>
+										</p>
+									</div>
+								</div>
+								<div class="vertical-item text-center">
+									<div class="item-media rounded">
+										<img src="images/team/3.jpg" alt="">
+										<div class="media-links">
+											<a class="abs-link" title="" href="team-single.html"></a>
+										</div>
+									</div>
+									<div class="item-content">
+										<h6 class="title-content">
+											<a href="team-single.html">Brian P. Turner</a>
+										</h6>
+
+										<p class="position">
+											Autor courses
+										</p>
+
+										<p class="social-icons">
+											<a href="#" class="fa fa-facebook" title="facebook"></a>
+											<a href="#" class="fa fa-instagram" title="instagram"></a>
+											<a href="#" class="fa fa-youtube-play" title="youtube"></a>
+										</p>
+
+									</div>
+								</div>
+								<div class="vertical-item text-center">
+									<div class="item-media rounded">
+										<img src="images/team/4.jpg" alt="">
+										<div class="media-links">
+											<a class="abs-link" title="" href="team-single.html"></a>
+										</div>
+									</div>
+									<div class="item-content">
+										<h6 class="title-content">
+											<a href="team-single.html">John B. Lewis</a>
+										</h6>
+
+										<p class="position">
+											Autor courses
+										</p>
+
+										<p class="social-icons">
+											<a href="#" class="fa fa-facebook" title="facebook"></a>
+											<a href="#" class="fa fa-instagram" title="instagram"></a>
+											<a href="#" class="fa fa-youtube-play" title="youtube"></a>
+										</p>
+									</div>
+								</div>
+								<div class="vertical-item text-center">
+									<div class="item-media rounded">
+										<img src="images/team/5.jpg" alt="">
+										<div class="media-links">
+											<a class="abs-link" title="" href="team-single.html"></a>
+										</div>
+									</div>
+									<div class="item-content">
+										<h6 class="title-content">
+											<a href="team-single.html">Lani C. Duffy</a>
+										</h6>
+
+										<p class="position">
+											Autor courses
+										</p>
+										<p class="social-icons">
+											<a href="#" class="fa fa-facebook" title="facebook"></a>
+											<a href="#" class="fa fa-paper-plane" title="telegram"></a>
+											<a href="#" class="fa fa-linkedin" title="linkedin"></a>
+											<a href="#" class="fa fa-instagram" title="instagram"></a>
+											<a href="#" class="fa fa-youtube-play" title="youtube"></a>
+										</p>
+									</div>
+								</div>
+							</div><!-- .team-slider -->
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="s-pt-60 s-pb-50 s-pt-lg-90 s-pb-lg-80 ls ms text-center text-md-left team-form">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-8">
+							<div class="intro_layer animate animated fadeInRight" data-animation="fadeInRight">
+								<h2 class="call-title">
+									Can’t find what you are looking for?
+								</h2>
+								<p class="fs-20">
+									Submit a ticket and we'll get back to you as soon as we can.
+								</p>
+								<form role="search" method="get" class="search-form search-course" action="/">
+									<div class="form-group has-placeholder">
+										<label for="search-form-widget">
+											<span class="screen-reader-text">Search for:</span>
+										</label>
+										<i class="fa fa-search"></i>
+										<input type="search" id="search-form-widget" class="search-field form-control" placeholder="" value="" name="search">
+										<button type="submit" class="search-submit btn btn-maincolor">Find courses</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="divider-3"></div>
+			</section>
+
+
+			<footer class="page_footer ds s-pt-60 s-pb-20 s-pt-lg-100 s-pb-lg-55 c-gutter-40 container-px-md-0 text-center text-md-left">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+
+							<div class="widget widget_text">
+								<a href="./" class="logo">
+									<img src="images/logo.png" alt="">
+									<span class="logo-text color-darkgrey">utor</span>
+								</a>
+								<p>
+									Isn't days fill, after him bring. Set likeness meat seed whose for itself you can't seas itself. Herb replenish he, dry he. Firmament their.
+								</p>
+							</div>
+						</div>
+
+						<div class="col-12 col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+							<div class="widget widget_tag_cloud">
+								<h3 class="widget-title">Tag</h3>
+								<div class="tagcloud">
+									<a href="#" class="tag-cloud-link">
+										Technology
+									</a>
+
+									<a href="#" class="tag-cloud-link">
+										Humanities
+									</a>
+
+									<a href="#" class="tag-cloud-link">
+										Language
+									</a>
+
+									<a href="#" class="tag-cloud-link">
+										Science
+									</a>
+
+									<a href="#" class="tag-cloud-link">
+										Business
+									</a>
+
+									<a href="#" class="tag-cloud-link">
+										Marketing
+									</a>
+									<a href="#" class="tag-cloud-link">
+										Lifestyle
+									</a>
+									<a href="#" class="tag-cloud-link">
+										Math
+									</a>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-12 col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+							<div class="widget widget_social_button">
+								<h3 class="widget-title">Follow us</h3>
+								<a class="facebook" href="#">
+									<i class="fa fa-facebook" title="facebook"></i>
+									TutorFacebook
+								</a>
+								<a class="twitter-linka" href="#">
+									<i class="fa fa-twitter" title="twitter"></i>
+									TutorTwitter
+								</a>
+								<a class="telegram" href="#">
+									<i class="fa fa-paper-plane" title="telegram"></i>
+									TutorTelegram
+								</a>
+								<a class="linkedin" href="#">
+									<i class="fa fa-linkedin" title="linkedin"></i>
+									TutorLinkedIn
+								</a>
+								<a class="instagram" href="#">
+									<i class="fa fa-instagram" title="instagram"></i>
+									TutorInstagram
+								</a>
+								<a class="youtube" href="#">
+									<i class="fa fa-youtube-play" title="youtube"></i>
+									TutorYoutube
+								</a>
+
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+							<div class="widget widget_icons_list">
+								<h3>Contacts</h3>
+								<div class="media side-icon-box">
+									<div class="icon-styled fs-14">
+										<i class="icon-m-marker-alt"></i>
+									</div>
+									<p class="media-body">USA, 3280 Cabell Avenue Alexandria, VA 22301</p>
+								</div>
+								<div class="media side-icon-box">
+									<div class="icon-styled fs-14">
+										<i class="icon-m-phone-alt"></i>
+									</div>
+									<p class="media-body">Tel.: +1 703-518-6099</p>
+								</div>
+								<div class="media side-icon-box">
+									<div class="icon-styled fs-14">
+										<i class="icon-m-fax-alt"></i>
+									</div>
+									<p class="media-body">Fax: +1 709-834-2693</p>
+								</div>
+								<div class="media side-icon-box">
+									<div class="icon-styled fs-14">
+										<i class="fa fa-envelope"></i>
+									</div>
+									<p class="media-body">
+										<a href="#">info@ustudi.com</a>
+									</p>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</footer>
+
+
+			<section class="page_copyright ds ms s-py-5">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="divider-20 d-none d-lg-block"></div>
+						<div class="col-md-12 text-center">
+							<p>&copy; <span class="copyright_year">2019</span> Tutor Copyright</p>
+						</div>
+						<div class="divider-20 d-none d-lg-block"></div>
+					</div>
+				</div>
+			</section>
+
+
+		</div><!-- eof #box_wrapper -->
+	</div><!-- eof #canvas -->
+
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>

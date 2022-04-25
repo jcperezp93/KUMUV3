@@ -1,0 +1,87 @@
+.contenedorBusqueda {
+  position: absolute;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  top: 0;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  z-index: 1070;
+}
+@media (max-width: 901px) {
+  .contenedorBusqueda {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .contenedorBusqueda {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 575px) {
+  .contenedorBusqueda {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 375px) {
+  .contenedorBusqueda {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.busquedaEv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .3rem;
+}
+@media (max-width: 768px) {
+  .busquedaEv {
+    flex-direction: column;
+  }
+}
+.mostrarCategoria {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  z-index: 1071;
+}
+.mostrarCategoria p {
+  padding: 1rem;
+  margin: 0;
+  color: #000;
+  width: 100%;
+}
+.mostrarCategoria p:hover {
+  background-color: #5CAE01;
+  color: #fff;
+  cursor: pointer;
+}
+.contenedor_card {
+  padding: .1rem .3rem;
+}
+.contenedorBusqueda .card {
+  overflow: hidden;
+  cursor: pointer;
+}
+.contenedorBusqueda .card p {
+  padding-bottom: 1rem;
+  color: #000;
+}
+.contenedorBusqueda .card p:last-child {
+  padding: 0;
+  position: absolute;
+  bottom: .1rem;
+  color: #000;
+  
+}
+.contenedorBusqueda span {
+  font-weight: bold;
+  color: #5CAE01;
+}

@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?8kmiqr');
+  src:  url('fonts/icomoon.eot?8kmiqr#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?8kmiqr') format('truetype'),
+    url('fonts/icomoon.woff?8kmiqr') format('woff'),
+    url('fonts/icomoon.svg?8kmiqr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-file-video:before {
+  content: "\e92a";
+}
+.icon-stack:before {
+  content: "\e92e";
+}
+.icon-coin-dollar:before {
+  content: "\e93b";
+}
+.icon-clock2:before {
+  content: "\e94f";
+}
+.icon-mobile:before {
+  content: "\e958";
+}
+.icon-users:before {
+  content: "\e972";
+}
+.icon-user-check:before {
+  content: "\e975";
+}
+.icon-user-tie:before {
+  content: "\e976";
+}
+.icon-hour-glass:before {
+  content: "\e979";
+}
+.icon-cogs:before {
+  content: "\e995";
+}
+.icon-gift:before {
+  content: "\e99f";
+}
+.icon-rocket:before {
+  content: "\e9a5";
+}
+.icon-sphere:before {
+  content: "\e9c9";
+}
+.icon-earth:before {
+  content: "\e9ca";
+}
+.icon-play2:before {
+  content: "\ea15";
+}

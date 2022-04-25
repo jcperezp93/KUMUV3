@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form class="form-inline" method="POST" action="" id="miForm">
+        <label>Nombres: </label>  </div>
+        <input type="text" id="search-form-widget" placeholder="Ingrese contenido"  class="form-control" onkeyup="PasarValor();">  
+        
+        <br><br>
+        <label>Nombres: </label>
+        <input type="text"  id="inputBusqueda" placeholder="Recibe contenido"  class="form-control">  
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="cerrar" onclick="limpiarFormulario()">
+            <span aria-hidden="true">×</span>
+        </button>
+        </form>
+        <script>
+        function limpiarFormulario() {
+            document.getElementById("miForm").reset();
+        }
+        </script>      
+
+        <script src="./js/miscript.js"></script>
+
+
+</body>
+</html>
